@@ -1,0 +1,96 @@
+.header {
+    .container {
+        padding-top: 3.2rem;
+        @include even;
+    }
+    &__logo {
+        width: 18.1rem;
+        height: 4.8rem;
+    }
+    &__items {
+        display: flex;
+        align-items:center;
+        margin-left: 6.8rem;
+    }
+    &__item {
+        display: flex;
+        align-items:flex-end;
+        min-width: 15.3rem;
+        &:not(:last-child) {
+            margin-right: 6.4rem; //все элементы кроме последнего margin rigth 6.4 rem 
+        }
+    }
+    &__img {
+        @include circle(3.2rem, 3.2rem, 50%);
+        background-color:#fff;
+        @include centered;
+        flex-shrink: 0;
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    &__description {
+        margin-left: 0.7rem;
+    }
+    &__title {
+        @include font(300,1.2rem,133%);
+        color: #828282;
+    }
+    &__text {
+        @include font(400,1.6rem,131%);
+        color: #4F4F4F;
+    }
+    &__number {
+        @include font(700,1.8rem,133%);
+        display: block;
+        color: #CC3333;
+        margin-bottom: 0.7rem;
+        &-two {
+            display: none;
+        } 
+    }
+    &__telephone {
+        display: flex;
+        align-items:center;
+    }
+    &__arrow {
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+        &-two {
+            transform: rotate(180deg);
+            display: none;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+    &__phone {
+        margin-right: 0.6rem;
+    }
+    &__modal {
+        @include font(300,1.2rem,133%);
+        color: #4F4F4F;
+        text-align: center;
+        text-decoration:underline;
+        cursor: pointer;
+    }
+
+    &__burger-wrap {
+        width: 4.3rem;
+        height: 4.3rem;
+        background: #fff;
+        box-shadow: 0 0.4rem .4rem rgba(0, 0, 0, 0.07);
+        border-radius: .5rem; 
+        cursor: pointer;
+        @include centered;
+        svg {
+            height: 70%;
+            width: 70%;
+        }
+
+    }
+}
