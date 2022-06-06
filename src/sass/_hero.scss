@@ -1,0 +1,58 @@
+.hero {
+    position: relative;
+    background: linear-gradient(180deg, #F4F4F4 0%, #E9E9E9 100%);
+    z-index: 1;
+    &__wrap {
+        padding-top: 19rem;
+        padding-bottom: 17.3rem;
+    }
+    &__bg {
+        position: absolute;
+        top: 12rem;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        img {
+            width: 91%;
+            margin-left: 5rem;
+        }
+    }
+    &__decor {
+        width: 37rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom:-.8rem;
+        z-index: -1;
+        img {
+            object-fit: cover;
+        }
+    }
+    &__header {
+        max-width: 60rem;
+        margin-bottom: 1.8rem;
+        @include font(700,5.8rem,133%);
+        color: #000000;
+        span {
+            text-transform: uppercase;
+            color: red;
+        }
+    }
+    &__text {
+        max-width: 51.5rem;
+        margin-bottom: 3rem;
+        @include font(400,1.6rem,150%);
+        color: #5C5C5C;
+    }
+    &__button {
+        @include font(700,1.6rem,131%);
+        color: #FFFFFF;
+        &-outline {
+            display:inline-block;
+            background: transparent;
+            padding: 3.2rem 1rem;
+            box-shadow: 0px 8px 30px -5px rgba(124, 23, 23, 0.2);
+            border-radius: 1rem;
+        }
+    }
+}
