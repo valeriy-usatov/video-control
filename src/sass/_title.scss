@@ -1,0 +1,22 @@
+.title {
+    text-align: center;
+    @include centered;
+    flex-direction: column;
+    &__header {
+        position: relative;
+        margin-bottom: 1.8rem;
+        @include font(700,3.6rem,133%);
+    }
+    &__subheader {
+        max-width: 68rem;
+        @include font(400,1.6rem,150%);
+        color: #5C5C5C;
+        
+    }
+    &__border {
+        &-mouting::after {
+           @include borderBot(46.2rem);
+           right: 0; 
+        }
+    }
+}

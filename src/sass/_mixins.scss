@@ -18,6 +18,24 @@
   font-size: $size;
   line-height: $height;
 }
+@mixin  borderBot ($width) {
+  content: '';
+  height: .5rem;
+  background-color: #DA3939;
+  position: absolute;
+  bottom: 0;
+  width: $width;
+}
+@mixin  borderAngle ($width,$height) {
+  content: '';
+  position:absolute;
+  background: url("../img/icons/Angle.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: $width;
+  height: $height;
+}
 // @mixin after-line ($width) {
 //   content: '';
 //   display: block;

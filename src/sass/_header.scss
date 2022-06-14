@@ -83,6 +83,11 @@
         text-decoration:underline;
         cursor: pointer;
     }
+    &__call {
+        display: flex;
+        flex-direction: column;
+        
+    }
 
     &__burger-wrap {
         width: 4.3rem;
