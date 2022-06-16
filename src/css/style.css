@@ -500,12 +500,24 @@ input[type=number] {
   font-size: 3.6rem;
   line-height: 133%;
 }
+.title__header--small {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 133%;
+}
 .title__subheader {
   max-width: 68rem;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
   color: #5C5C5C;
+}
+.title__subheader--small {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #FFFFFF;
 }
 .title__border-mouting::after {
   content: "";
@@ -515,6 +527,87 @@ input[type=number] {
   bottom: 0;
   width: 46.2rem;
   right: 0;
+}
+.title__border-install::after {
+  content: "";
+  height: 0.5rem;
+  background-color: #DA3939;
+  position: absolute;
+  bottom: 0;
+  width: 64.5rem;
+  left: 0;
+}
+.title--left {
+  min-width: 77.5%;
+  text-align: left;
+  align-items: flex-start;
+  padding-left: 28rem;
+}
+
+.garant {
+  position: relative;
+  background: #333333;
+  padding-top: 7.7rem;
+  padding-bottom: 7.3rem;
+}
+.garant__bg {
+  position: absolute;
+  width: 100%;
+  top: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.garant .container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.install {
+  padding-top: 7.2rem;
+  padding-bottom: 8.5rem;
+}
+.install__items {
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.install__item {
+  position: relative;
+  width: 26.9rem;
+  border-radius: 1rem;
+}
+.install__item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background: #000;
+  border-radius: 1rem;
+  opacity: 0.75;
+}
+.install__text {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 2rem;
+  z-index: 10;
+  color: #FFFFFF;
+}
+.install__header {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 133%;
+}
+.install__link {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 133%;
+  display: none;
 }
 
 @media (max-width: 48rem) {
@@ -548,6 +641,13 @@ input[type=number] {
   .hero__text {
     font-size: 2.8rem;
   }
+  .hero .container {
+    text-align: center;
+  }
+  .hero .container .button-outline {
+    position: absolute;
+    left: 1rem;
+  }
   .hero__arrow-prev {
     left: 1rem;
   }
@@ -557,14 +657,6 @@ input[type=number] {
 
   .button {
     font-size: 2.4rem;
-  }
-
-  .container {
-    text-align: center;
-  }
-  .container .button-outline {
-    position: absolute;
-    left: 1rem;
   }
 
   .title__header {
@@ -577,6 +669,14 @@ input[type=number] {
   }
   .title__subheader {
     font-size: 3rem;
+  }
+  .title--left {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    text-align: center;
   }
 
   .mouting__items {
@@ -601,5 +701,46 @@ input[type=number] {
   .mouting__img {
     width: 8.3rem;
     height: 8.3rem;
+  }
+
+  .garant__bg {
+    display: none;
+  }
+  .garant .container {
+    flex-direction: column;
+  }
+  .garant .title--left {
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 48rem) {
+  .install__item:hover::after {
+    background: red;
+    cursor: pointer;
+  }
+  .install__item:hover .install__text {
+    width: 96%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .install__item:hover .install__link {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  .install__item:hover .install__link:after {
+    content: "";
+    width: 0.1rem;
+    height: 2.4rem;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

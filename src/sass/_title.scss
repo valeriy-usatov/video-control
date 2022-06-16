@@ -6,17 +6,41 @@
         position: relative;
         margin-bottom: 1.8rem;
         @include font(700,3.6rem,133%);
+        &--small {
+            color: #FFFFFF;
+            @include font(700,2.4rem,133%);
+
+        }
     }
     &__subheader {
         max-width: 68rem;
         @include font(400,1.6rem,150%);
         color: #5C5C5C;
+        &--small {
+            @include font(400,1.8rem,150%);
+            color: #FFFFFF;
+
+        }
         
     }
     &__border {
         &-mouting::after {
            @include borderBot(46.2rem);
-           right: 0; 
+           right: 0;    
         }
+        &-install {
+            &::after {
+                @include borderBot(64.5rem);
+            left:0;
+            }
+            
+            
+        }
+    }
+    &--left {
+        min-width: 77.5%;
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 28rem;
     }
 }
