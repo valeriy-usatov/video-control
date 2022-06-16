@@ -59,6 +59,17 @@
                 width: 42.2rem;
                 right: 7rem;
             }
+            &-install {
+                &::after {
+                    width: 32.2rem;
+                    left: 12rem;
+                }
+            
+            }
+            &-advantages::after {
+                width: 33rem;
+                left: 14rem;
+            }
         }
         &__subheader {
             font-size: 3rem;
@@ -106,6 +117,46 @@
             margin-bottom: 4rem;
         }
     }
+    .install {
+        &__items {
+            padding-top: 4rem;
+            gap:4rem;
+        }
+        &__item {
+            width:100%;
+        }
+        &__header {
+            @include font (700,3rem,133%);
+        }
+        &__link {
+            @include font (700,2.6rem,133%);
+            display: block;
+        }
+    }
+    .advantages {
+        &__items {
+            gap:8rem 0;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__bottom {
+            font-size: 3.6rem;
+        }
+        &__picture {
+            width: 14rem;
+            height: 14rem;
+        }
+        &__img {
+            width: 12rem;
+            height: 12rem;
+        }
+        &__top {
+            span {
+                font-size: 3rem;
+            }
+        }
+    }
 
 
 }
@@ -141,6 +192,19 @@
                         left: 50%;
                         transform: translateX(-50%);
                     }
+
+                }
+                &::before {
+                    content: "";
+                    width: 108%;
+                    height:108%;
+                    background-color:transparent;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%); 
+                    border: .1rem solid rgba(207, 53, 53, 0.25);
+                    border-radius: 1.3rem;
                 }
                 
             }

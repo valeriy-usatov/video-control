@@ -32,10 +32,13 @@
             &::after {
                 @include borderBot(64.5rem);
             left:0;
-            }
-            
-            
+            }    
         }
+        &-advantages::after {
+            @include borderBot(25.6rem);
+            right: 0;
+        }
+        
     }
     &--left {
         min-width: 77.5%;
