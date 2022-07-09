@@ -88,6 +88,15 @@
             padding-left: 0;
             text-align: center;
         }
+        &--center {
+            max-width: 100%;
+            @include centered;
+            padding-left: 0;
+            margin-bottom: 4rem;
+            .title__header--small {
+                margin-bottom: 4.5rem;
+            }
+        }
     }
     .mouting {
         &__items {
@@ -210,6 +219,14 @@
     .brands {
         .slider__arrow {
             display: none;
+        }
+    }
+    .budget {
+        &__bg {
+            display: none;
+        }
+        .container {
+            flex-direction: column;
         }
     }
 
