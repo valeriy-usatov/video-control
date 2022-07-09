@@ -42,6 +42,10 @@
             @include borderBot(67.3rem);
             right: 0;
         }
+        &-brands::after {
+            @include borderBot(43.6rem);
+            right: 0;
+        }
         
     }
     &--left {
@@ -50,5 +54,5 @@
         align-items: flex-start;
         padding-left: 28rem;
     }
-    
+
 }

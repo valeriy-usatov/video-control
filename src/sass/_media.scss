@@ -74,6 +74,10 @@
                 width:22.5rem;
                 left:17rem;
             }
+            &-brands::after {
+                width:31rem;
+                right: 0rem;
+            }
         }
         &__subheader {
             font-size: 3rem;
@@ -202,6 +206,11 @@
             font-size: 2.6rem;
         }
         
+    }
+    .brands {
+        .slider__arrow {
+            display: none;
+        }
     }
 
 

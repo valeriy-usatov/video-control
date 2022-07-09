@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded",() => {
             arrowtelephoneHidden.style.display= "none";
         }
     });   
-    const swiper = new Swiper('.hero__slider', {
+    const swiperHero = new Swiper('.hero__slider', {
         // Optional parameters
         
         loop: true,
@@ -39,6 +39,27 @@ window.addEventListener("DOMContentLoaded",() => {
         navigation: {
           nextEl: '.hero__arrow-next',
           prevEl: '.hero__arrow-prev',
+        },
+      
+        // And if we need scrollbar
+       
+    });
+    const swiperBrands = new Swiper('.brands__slider', {
+        // Optional parameters
+        
+        loop: true,
+        spaceBetween:30,
+        breakpoints: {
+            320: {
+                slidesPerView:2
+            },
+            768: {
+                slidesPerView:4
+            }
+        },
+        navigation: {
+          nextEl: '.brands__arrow-next',
+          prevEl: '.brands__arrow-prev',
         },
       
         // And if we need scrollbar
