@@ -65,21 +65,21 @@ window.addEventListener("DOMContentLoaded",() => {
     if (document.querySelector(".preview__play")) {
         const playVideo= document.querySelector(".preview__play"),
               preview =document.querySelector(".preview__img"),
-              videoText=document.querySelector(".preview__text"),
-              vidBG =document.querySelector(".preview__bg"),
-              videoWrap=document.querySelector(".preview__player"),
-              video =document.querySelector("..video__wrap ifame");
+              videoText=document.querySelector(".video__text"),
+              vidBG =document.querySelector(".video__bg"),
+              videoWrap=document.querySelector(".video__player"),
+              video =document.querySelector(".video__wrap iframe");
     
         playVideo.addEventListener ("click",() => {
-            playVideo.style.display="none";
-            preview.style.display="none";
+            playVideo.style.display= "none";
+            preview.style.display= "none";
             videoText.style.display= "none";
             video.style.display= "block";
-            video.style.marginTop="-50rem";
-            video.style.position="relative";
-            video.style.zIndex="100";
-            vidBG.style.zIndex="0";
-            videoWrap.style.minHeight="50rem";
+            video.style.marginTop= "-50rem";
+            video.style.position= "relative";
+            video.style.zIndex= "100";
+            vidBG.style.zIndex= "0";
+            videoWrap.style.minHeight= "50rem";
         });
     }
 })
