@@ -1,0 +1,113 @@
+.price {
+    position: relative;
+    padding-top: 7.2rem;
+    padding-bottom: 11.2rem;
+    background: linear-gradient(180deg, #F4F4F4 0%, #E9E9E9 100%);
+    &__bg {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2.7rem;
+    }
+    &__card {
+        position: relative;
+        width: 26.8rem;
+        @include centered;
+        flex-direction: column;
+        padding-bottom: 1.7rem;
+        text-align: center;
+    }
+    &__name {
+        width:100%;
+        @include font(700,1.8rem, 133%);
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+        box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, 0.09);
+        border-radius: 1rem 1rem 1rem 0; 
+        &::before {
+            @include borderAngle(5.7rem, 5.8rem);
+            left: -0.9rem;
+            top: -1.4rem;
+        } 
+        &::after {
+            @include borderAngle(5.7rem, 5.8rem);
+            right: -0.9rem;
+            top: 1.4rem;
+            transform: rotate((180deg));
+        } 
+    }
+    &__description {
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+        padding-top: 2.5rem;
+    }
+    &__coin {
+        margin-bottom: 1.4rem;
+        @include font(700, 2.4rem, 133%);
+        color: #CF3535;
+        span {
+            font-size: 3.6rem;
+        }
+    }
+    &__mounting {
+        margin-bottom: 1rem;
+        @include font(600, 1.8rem, 150%);
+        color: #5C5C5C;
+    }
+    &__corr {
+        margin-bottom: 2.5rem;
+        @include font(400, 1.4rem, 150%);
+        color: #5C5C5C; 
+    }
+    &__img {
+        width: 25.3rem;
+        height: 18.2rem;
+        margin: 0 auto 2.6rem auto;
+        padding-bottom: 1rem;
+    }
+    &__title {
+        margin-bottom: 1.4rem;
+        @include font(700, 1.8rem, 133%);
+    }
+    &__list {
+        margin-bottom: 1.4rem;
+        text-align: left;
+    }
+    &__item {
+        position: relative;
+        padding-left: 2rem;
+        &:not(:last-child){
+            margin-bottom: 0.5rem;
+        }
+        @include font(400, 1.8rem, 150%);
+        color: #5C5C5C;
+        &::before {
+           content: "";
+           width: 1.2rem;
+           height: 1.2rem;
+        //    border-radius:50%;
+           display: block;
+           background: url("../img/price/dot.svg");
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size:cover;
+           position: absolute;
+           left: 0rem;
+           top: 50%;
+           transform: translate(0, -50%);
+
+        } 
+    }
+    .button__outline, .button-border, .price__button {
+        width: 100%;
+    }
+    .button-border {
+        display:inline-block;
+        padding: .8rem 1rem;
+    }
+}

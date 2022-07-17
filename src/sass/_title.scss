@@ -50,6 +50,10 @@
             @include borderBot(45.6rem);
             right: 0;
         }
+        &-price::after {
+            @include borderBot(28.1rem);
+            right: 0;
+        }
         
     }
     &--left {
