@@ -90,6 +90,10 @@
                 width:29.8rem;
                 left: 13rem;
             }
+            &-reviews::after {
+                width: 18rem;
+                
+            }
         }
         &__subheader {
             font-size: 3rem;
@@ -332,6 +336,31 @@
             text-align: center;
         }
 
+    }
+    .reviews {
+        &__slider {
+            .slider__arrow-prev, .slider__arrow-next {
+                display: none;
+            }
+        }
+        &__date {
+            font-size: 2.8rem;
+        }
+        &__avatar {
+            width: 12rem;
+            height: 12rem;
+            margin-bottom: 4rem;
+        }
+        &__title {
+            margin-bottom: 3rem;
+            font-size: 3.6rem;
+    
+        }
+        &__text {
+           font-size: 2.8rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
     }
 
 

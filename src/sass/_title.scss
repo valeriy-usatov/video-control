@@ -58,6 +58,10 @@
             @include borderBot(22.8rem);
             right: 0;
         }
+        &-reviews::after {
+            @include borderBot(13.7rem);
+            left: 0;
+        }
         
     }
     &--left {
