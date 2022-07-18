@@ -86,6 +86,10 @@
                 width:20rem;
                 left: 18rem;
             }
+            &-information::after {
+                width:29.8rem;
+                left: 13rem;
+            }
         }
         &__subheader {
             font-size: 3rem;
@@ -296,6 +300,38 @@
             font-size: 3.4rem;
             padding: 3rem 4rem;
         }
+    }
+    .information {
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__card {
+            max-width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 6rem;
+            }
+        }
+        &__title {
+            font-size: 3.6rem;
+            margin-bottom: 1rem;
+    
+        }
+        &__text {
+            font-size: 2.8em;
+            color: #5C5C5C; 
+        }
+        &__description {
+            height: 35rem;
+        }
+        & .button-border, & .information__button {
+            width: 100%;
+        }
+        & .information__button {
+            font-size: 3.4rem;
+            padding: 3rem 4rem;
+            text-align: center;
+        }
+
     }
 
 
