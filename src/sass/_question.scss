@@ -1,0 +1,35 @@
+.question {
+    position: relative;
+    padding-top: 7.1rem;
+    padding-bottom: 13.3rem;
+    &__description {
+        padding-bottom: 6.1rem;
+        @include font(400,1.4rem,150%);
+        h4 {
+            @include font(400,2.4rem,150%);
+        }
+        p {
+            margin-bottom: 1.1rem;
+        }
+        button {
+            position: relative;
+            @include font(600, 1.4rem, 176%);
+            text-decoration-line: underline;
+            color: #CF3535;
+            &::after {
+                content: "";
+                display: block;
+                width: 2rem;
+                height: 1rem;
+                background: url("../img/question/arrow-down.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: -2.5rem;
+                top: 1rem;
+            }
+        }
+        
+    }
+
+}
