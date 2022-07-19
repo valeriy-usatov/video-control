@@ -382,6 +382,19 @@
         //     top:-3rem;
         // }
     }
+    .services {
+        &__bg {
+            top: 31rem;
+            bottom: 0;
+        }
+        &__item {
+            font-size: 2.8rem;
+            
+        }
+        &__list {
+            grid-template-rows: repeat(45, 1fr);
+        }
+    }
 
 
 }
