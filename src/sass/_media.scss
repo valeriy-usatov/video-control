@@ -94,6 +94,10 @@
                 width: 18rem;
                 
             }
+            &-example::after {
+                width:29rem;
+                right: 0rem;
+            }
         }
         &__subheader {
             font-size: 3rem;
@@ -361,6 +365,22 @@
             padding-left: 2rem;
             padding-right: 2rem;
         }
+    }
+    .example {
+        &__bg {
+            top: -8.5rem;
+            left: -4rem;
+        }
+        &__title {
+            margin-bottom: 2rem;
+            font-size: 2.8rem;
+        }
+        &__text {
+            font-size: 1.8rem;
+        }
+        // &__arrow-prev {
+        //     top:-3rem;
+        // }
     }
 
 

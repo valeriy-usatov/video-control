@@ -105,4 +105,25 @@ window.addEventListener("DOMContentLoaded",() => {
         }     
     });
 
+    const swiperExample = new Swiper('.example__slider', {
+        loop: true,
+        spaceBetween: 30,
+        breakpoints: {
+            320: {
+                slidesPerView:1
+            },
+            768: {
+                slidesPerView:4
+            },
+            578: {
+                slidesPerView:2
+            }
+        },
+        navigation: {
+            nextEl: '.example__arrow-next',
+            prevEl: '.example__arrow-prev',
+          }, 
+         
+    });
+
 })
