@@ -71,6 +71,10 @@
             left: 50%;
             transform: translate(-50%);
         }
+        &-question::after {
+            @include borderBot(38.3rem);
+            right: 0;
+        }
         
         
     }
