@@ -98,6 +98,10 @@
                 width:29rem;
                 right: 0rem;
             }
+            &-question::after {
+                width:20rem;
+                right: 18rem;
+            }
         }
         &__subheader {
             font-size: 3rem;
@@ -393,6 +397,50 @@
         }
         &__list {
             grid-template-rows: repeat(45, 1fr);
+        }
+    }
+    .question {
+        &__description {
+            font-size: 2.8rem;
+            h4 {
+                font-size: 4rem;
+            }
+            ul {
+                padding-left: 3rem;
+                margin-bottom: 2rem;
+                li {
+                    padding-left: .5rem;
+                }
+            }
+        }
+        &__bg {
+            display: none;
+        }
+        button {
+            font-size: 2.8rem;
+            &::after {
+                width: 2rem;
+                height: 1.5rem;
+                right: -3rem;
+                top: 2rem;
+            }
+        }
+        &__title {
+            font-size: 2.8rem;
+            max-width: 90%;
+        }
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+        }
+        &__answer {
+            font-size: 2.8rem;
+            min-height: 22rem;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
         }
     }
 
