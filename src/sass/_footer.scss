@@ -1,0 +1,172 @@
+.footer {
+    padding-top: 5rem;
+    background: #363636;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.3rem;
+        color: #FFFFFF;
+    }
+    &__name {
+        display: flex;
+        align-items:center;
+        margin-bottom: 0.5rem;
+        @include font(600, 1.6rem, 131%);   
+    }
+    &__tel {
+        max-width: 16rem;
+        @include font(400, 1.6rem, 131%); 
+        a {
+            color: #CC3333;
+        } 
+        span {
+            color: #828282;
+        } 
+    }
+    &__mail {
+        margin-bottom: 2rem;
+        a {
+            @include font(400, 1.6rem, 131%);
+            color: #CC3333;   
+        }
+    }
+    &__title {
+        @include font(700, 1.8rem, 131%);
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+    &__item {
+        @include font(400, 1.6rem, 131%);
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+    &__social {
+        &-images {
+            display: flex;
+            align-items:center;
+            
+        }
+        &-img {
+            img {
+                width: 100%;
+                height: 100%;
+                flex-shrink: 0;
+            }
+            &:first-child {
+                width: 2rem;
+                height: 2rem;
+                margin-right: 1.6rem;
+            }
+            &:last-child {
+                width: 3rem;
+                height: 2rem;
+            }
+        }
+    }
+    &__text {
+        @include font(400, 1.6rem, 131%);
+        max-width: 27rem; 
+    }
+    &__menu {
+        &:first-child {
+            min-width: 31rem;
+        }
+        &:first-child > .footer__address:nth-child(2) > .footer__name {
+            &:before {
+                content: "";
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 0.5rem;
+                background: url("../img/footer/address.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+        }
+        // &:first-child>.footer__address:nth-child(3) {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     margin-top: 2.5rem;
+        // }
+        &:first-child>.footer__address:nth-child(3)>.footer__tel>.footer__name {
+            &:before {
+                content: "";
+                display: block;
+                width: 1.4rem;
+                height: 1.4rem;
+                margin-right: 0.5rem;
+                background: url("../img/footer/call.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            } 
+        }
+        &:first-child > .footer__address:nth-child(3) >.footer__internet >.footer__mail> .footer__name {
+            &:before {
+                content: "";
+                display: block;
+                width: 1.2rem;
+                height: 1.2rem;
+                margin-right: 0.5rem;
+                background: url("../img/footer/mail.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+        }
+
+    }
+    &__language {
+        margin-top: 2rem;
+        width: 17rem;
+        height: 4.7rem;
+    }
+    &__address {
+        &:last-child {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2.5rem;
+        }
+    }
+    &__delivery {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        color: #828282;
+        @include font(400, 1.4rem, 136%); 
+        border-top: .1rem solid #828282;
+        border-bottom: .1rem solid #828282;
+    }
+    &__coin {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+    }
+    &__money {
+        &-title {
+            margin-right: 1.4rem;
+            @include font(400, 1.4rem, 136%);
+            color: #FFFFFF;
+        }
+        &-images {
+            display: flex;
+            align-items:center;
+        }
+        &-img:not(:last-child) {
+            margin-right: 1.2rem;
+        }
+    }
+    &__copyright {
+        @include font(400, 1.4rem, 136%); 
+        color: #828282;
+    }
+    &__system {
+        display: flex;
+        align-items:center;
+    }
+
+}
