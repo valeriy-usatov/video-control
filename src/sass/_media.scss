@@ -518,8 +518,8 @@
             
             &:first-child>.footer__address:nth-child(3)>.footer__tel>.footer__name {
                 &:before {
-                    width: 5rem;
-                    height: 5rem;
+                    width: 3rem;
+                    height: 3rem;
                     margin-right: 0.5rem;
                 } 
             }
@@ -534,10 +534,80 @@
         }
         &__name {
             font-size: 3.2rem;
+            margin-bottom: 4rem;
         }
         &__text {
             font-size: 2.8rem;
-            max-width: 100%;
+            max-width: 95%;
+        }
+        &__tel {
+            font-size: 3.2rem;
+            max-width: 60%;
+            margin-bottom: 2rem;
+        }
+        &__mail a {
+            font-size: 3.2rem;
+        }
+        &__address {
+            &:first-child {
+                margin-bottom: 2rem;
+            }
+        }
+        &__internet {
+            margin-top: 2rem;
+        }
+        &__item {
+            font-size: 3.2rem;
+        }
+        &__social {
+            &-images {
+                display: flex;
+                align-items:center;
+                
+            }
+            &-img {
+                &:first-child {
+                    width: 6rem;
+                    height: 6rem;
+                    margin-right: 2.6rem;
+                }
+                &:last-child {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+        }
+        &__language {
+            margin-top: 4rem;
+            width: 45%;
+            height: 7rem;
+        }
+        
+        &__delivery {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            color: #828282;
+           font-size: 2.8rem;
+            border-top: .2rem solid #828282;
+            border-bottom: .2rem solid #828282;
+        }
+        &__money {
+            &-title {
+                margin-right: 28rem;
+                font-size: 2.8rem;
+                margin-bottom: 2rem;
+            }
+            
+            &-img:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+        &__copyright {
+           font-size: 2.8rem;
+        }
+        &__system {
+            display: flex;
+            align-items:center;
         }
        
     }
