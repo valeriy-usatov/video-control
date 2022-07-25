@@ -144,5 +144,71 @@ window.addEventListener("DOMContentLoaded",() => {
                 })
             }
         })
+    }
+    if (document.querySelector(".button-outline")) {
+        const buttonOpenModal = document.querySelectorAll(".button-outline"),
+              modalOverlay = document.querySelector(".modal__overlay"),
+              body = document.querySelector("body"), 
+              modalThanks = document.querySelector(".modal__thanks"),
+              modalCheck = document.querySelector(".modal__check"), 
+              modalCloseThanks = document.querySelector("#close-thanks"), 
+              modalCloseCheck = document.querySelector("#close-check"), 
+              modalThanksOpen = document.querySelector(".modal__form-button");
+    
+                buttonOpenModal.forEach (item => {
+                    item.addEventListener("click", () => {
+                        modalOverlay.classList.add("modal__active");
+                        modalCheck.classList.add("modal__active");
+                        body.classList.add("noscroll");
+                    });
+                });
+            modalCloseCheck.addEventListener('click',() => {
+                modalOverlay.classList.remove("modal__active");
+                modalCheck.classList.remove("modal__active");
+                body.classList.remove("noscroll");
+            });
+            
+            modalThanksOpen.addEventListener("click", () => {
+                modalOverlay.classList.add("modal__active");
+                modalCheck.classList.remove("modal__active");
+                modalThanks.classList.add("modal__active");
+            });
+
+            modalCloseThanks.addEventListener("click", () => {
+                modalOverlay.classList.remove("modal__active");
+                body.classList.remove("modal__active");
+                modalThanks.classList.remove("modal__active");
+            })
+
+            modalOverlay.addEventListener("click", () => {
+                modalThanks.classList.remove('modal__active');
+                modalCheck.classList.remove("modal__active");
+                modalOverlay.classList.remove("modal__active"); 
+            })
+
+            
+
+            window.addEventListener('keyup', (e) => {
+                if (e.key === 'Escape') {
+                    modalThanks.classList.remove('modal__active');
+                    modalCheck.classList.remove("modal__active");
+                    modalOverlay.classList.remove("modal__active");
+                }
+                
+            });
     }    
+    
+             
+
+
+
 })
+
+window.addEventListener('keyup', (e) => {
+    if (e.key === 'Escape') {
+        modalThanks.classList.remove('modal__active');
+        modalCheck.classList.remove("modal__active");
+        modalOverlay.classList.remove("modal__active");
+    }
+    
+});

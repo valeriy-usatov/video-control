@@ -611,6 +611,45 @@
         }
        
     }
+    .modal {
+        &__form {
+            &-title {
+                font-size: 4rem;
+                border-bottom: .2rem solid #E0E0E0;
+                padding-top: 5.5rem;
+            } 
+            &-close {
+                width: 3rem;
+                height: 3rem;
+                
+            } 
+            &-input {
+                margin-bottom: 2rem;
+                label {
+                    font-size: 2.4rem;
+                }
+                input {
+                    height: 8rem;
+                    font-size: 3.2rem;
+                    border: .2rem solid #E0E0E0;
+                    &:placeholder {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            &-button {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            } 
+               
+        }
+        &__thanks {
+            .modal__form-text {
+               font-size: 2.8rem;
+               width: 100%;
+            }
+        }
+    }
 
 
 }

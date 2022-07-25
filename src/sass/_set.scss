@@ -133,6 +133,10 @@ ul li {
             display: flex;
         }
     }
+    .noscroll {
+        overflow: hidden !important;
+        height: 100% !important;
+    }
 }
 
 input[type="number"]::-webkit-inner-spin-button,
