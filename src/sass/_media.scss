@@ -618,6 +618,7 @@
     }
     .modal {
         &__form {
+            min-width: 56rem;
             &-title {
                 font-size: 4rem;
                 border-bottom: .2rem solid #E0E0E0;
@@ -734,9 +735,10 @@
                 }
             }
             &-install:hover {
+                &::after {
                 width: 100%;
                 transition: width .025s ease-out .025s;
-                
+                }
             }
             &-advantages:hover {
                 &::after {
@@ -745,6 +747,48 @@
                 }
             }
             &-why:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-brands:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-video:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-price:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-reviews:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-example:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-services:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-question:hover {
                 &::after {
                     width: 100%;
                     transition: width .025s ease-out .025s;
@@ -809,6 +853,33 @@
             width: 100%;
             height: 100%;
             border-radius: 1rem;
+        }
+    }
+    .services {
+        &__item:hover {
+            margin-left: 1rem;
+            margin-right: -1rem;
+            color:#da3939;
+            transition: .25s linear;
+            cursor: pointer;
+            
+        }
+    }
+    .footer {
+        &__item:hover {
+            margin-left: 1rem;
+            margin-right: -1rem;
+            color:#da3939;
+            transition: .25s linear;
+            cursor: pointer;
+            
+        }  
+    }
+    .form {
+        &__button:hover {
+            transform:scale(1.05);
+            transition: .25s linear;
+            border-radius:1rem;
         }
     }
    

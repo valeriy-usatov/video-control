@@ -37,6 +37,7 @@
     }
     &__item {
         @include font(400, 1.6rem, 131%);
+        transition: all .25s linear;
         &:not(:last-child) {
             margin-bottom: 2rem;
         }
