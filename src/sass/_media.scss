@@ -1,4 +1,8 @@
+
+
+
 @media (max-width:48rem) {
+    
     .header {
         width: 100%;
         &__items, &__call {
@@ -129,6 +133,7 @@
         &__item {
             min-width: 100%;
             padding: 4rem 3rem;
+           
             &::before {
                 width: 6rem;
                 height: 6.5rem;
@@ -651,8 +656,10 @@
         }
     }
 
-
 }
+
+// width:fit-content;
+
 @media (min-width:48rem) {
     .install {
         &__item {
@@ -703,4 +710,106 @@
             }
         }
     }
-}
+    .button {
+        &-outline:hover {
+            animation-duration:2s ;
+            animation-iteration-count: infinite;
+            animation-name: pulse-1 ;
+            .button-border {
+                animation-duration:2s ;
+                animation-iteration-count: infinite;
+                animation-name: pulse-1 ;
+                .button {
+                    opacity:1;
+                } 
+            }
+        }
+    }
+    .title {        
+        &__border {
+            &-mouting:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-install:hover {
+                width: 100%;
+                transition: width .025s ease-out .025s;
+                
+            }
+            &-advantages:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+            &-why:hover {
+                &::after {
+                    width: 100%;
+                    transition: width .025s ease-out .025s;
+                }
+            }
+        }
+    }
+    .mouting {
+        &__item:hover {
+            transform:scale(1.05);
+            transition: .25s ease-out;
+        }
+    }
+    .why {
+        &__img:hover {
+            picture {
+                transform:scale(1.05);
+                transition: .25s ease-out;
+            }   
+        }
+    }
+    .brands {
+        &__slide:hover {
+            img {
+                transform:scale(1.5);
+                transition: .25s ease-out;
+            }   
+        }
+    }
+    .hover-card {
+        transition: all .25s linear;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &::after, &::before {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            box-sizing: inherit;
+            position: absolute;
+            border: .3rem solid transparent;
+            border-radius: 1rem;
+        }
+        &:hover::after {
+            border-bottom-color: #da3939;
+            border-left-color: #da3939; 
+            transition: height .25s ease-out, width .25s ease-out .25s;
+        }
+        &:hover {
+            .price__name::before, .price__name::after {
+                display: none;
+            }
+        }
+        &:hover::before {
+            border-top-color: #da3939;
+            border-right-color: #da3939; 
+            transition: width .25s ease-out, height .25s ease-out .25s;
+        }
+        &:hover::after, &:hover::before {
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+    }
+   
+}    

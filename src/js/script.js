@@ -180,11 +180,14 @@ window.addEventListener("DOMContentLoaded",() => {
                 modalThanks.classList.remove("modal__active");
             })
 
-            modalOverlay.addEventListener("click", () => {
-                modalThanks.classList.remove('modal__active');
-                modalCheck.classList.remove("modal__active");
-                modalOverlay.classList.remove("modal__active"); 
-            })
+              
+
+            // modalOverlay.addEventListener("click", () => {
+                
+            //     modalThanks.classList.remove('modal__active');
+            //     modalCheck.classList.remove("modal__active");
+            //     modalOverlay.classList.remove("modal__active"); 
+            // })
 
             
 

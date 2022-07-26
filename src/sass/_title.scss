@@ -6,6 +6,7 @@
         position: relative;
         margin-bottom: 1.8rem;
         @include font(700,3.6rem,133%);
+        width: fit-content;
         &--small {
             color: #FFFFFF;
             @include font(700,2.4rem,133%);
@@ -31,7 +32,7 @@
         &-install {
             &::after {
                 @include borderBot(64.5rem);
-            left:0;
+                left:0;
             }    
         }
         &-advantages::after {
